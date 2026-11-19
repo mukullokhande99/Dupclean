@@ -66,3 +66,9 @@ See `README.txt` and `UPGRADE_FROM_V3_V4.txt` for full operational details and m
 ## License
 
 No open-source license has been selected yet. A license should be added by the repository owner before inviting public reuse or contributions.
+
+## Windows standalone executable build
+
+A GitHub Actions workflow at `.github/workflows/windows-exe.yml` builds three unsigned Windows executables with PyInstaller: `Dupclean.exe` (desktop viewer), `DupcleanConfigure.exe` (schedule settings), and `DupcleanScanner.exe` (background scanner). It publishes `Dupclean-Windows-x64.zip` as a workflow artifact, and attaches that ZIP to a published GitHub Release.
+
+**Build prerequisite:** This repository must contain the actual Python application source files (`PaperDuplicateCleaner.py`, `configure_background.py`, `background_scan.py`, `scanner_lock.py`) and the Windows PowerShell scripts. These files have not yet been added to this repository. The workflow will fail its source verification step until they are uploaded. The standalone executable has not yet been built or tested on Windows.
