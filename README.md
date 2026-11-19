@@ -1,3 +1,5 @@
+> **Repository setup in progress:** The v5 application source files are not yet uploaded. Download the source ZIP from the accompanying ChatGPT conversation, extract it, and upload the files to this repository before attempting installation. This repository currently contains documentation and CI scaffolding only.
+
 # Paper Duplicate Cleaner for Windows
 
 A local-first Windows utility for finding duplicate research PDFs and other repeated files, even when filenames differ. Includes a desktop review tool and a scheduled, resumable background scanner.
