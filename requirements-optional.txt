@@ -1,0 +1,2 @@
+# Optional PDF text fingerprinting
+PyMuPDF>=1.24
